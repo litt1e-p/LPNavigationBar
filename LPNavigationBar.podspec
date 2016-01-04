@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.author           = { "litt1e-p" => "litt1e.p4ul@gmail.com" }
   s.source           = { :git => "https://github.com/litt1e-p/LPNavigationBar.git", :tag => '1.0.0' }
   # s.social_media_url = 'https://twitter.com/NAME'
-  s.platform = :ios, '7.0'
+  s.platform = :ios, '8.0'
   # s.ios.deployment_target = '5.0'
   # s.osx.deployment_target = '10.7'
   s.requires_arc = true

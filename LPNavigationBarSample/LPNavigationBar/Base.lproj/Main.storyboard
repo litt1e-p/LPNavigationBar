@@ -55,13 +55,25 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VOD-bf-RBN">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <imageView key="tableHeaderView" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg.jpg" id="VVi-IL-Ff8">
-                                    <rect key="frame" x="0.0" y="64" width="600" height="223"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="DLI-Tn-n2t">
+                                    <rect key="frame" x="0.0" y="64" width="600" height="190"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                </imageView>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="VVi-IL-Ff8">
+                                            <rect key="frame" x="0.0" y="-64" width="600" height="254"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="VVi-IL-Ff8" secondAttribute="trailing" id="3hY-Gl-e6o"/>
+                                        <constraint firstItem="VVi-IL-Ff8" firstAttribute="leading" secondItem="DLI-Tn-n2t" secondAttribute="leading" id="Ivp-97-sI7"/>
+                                        <constraint firstItem="VVi-IL-Ff8" firstAttribute="top" secondItem="DLI-Tn-n2t" secondAttribute="top" constant="-64" id="ONN-ph-7jb"/>
+                                        <constraint firstAttribute="bottom" secondItem="VVi-IL-Ff8" secondAttribute="bottom" id="WUu-dm-GqR"/>
+                                    </constraints>
+                                </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="kBgBgColorViewCellID" textLabel="2uR-9s-cLI" style="IBUITableViewCellStyleDefault" id="ZoB-pr-16J">
-                                        <rect key="frame" x="0.0" y="315" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="282" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZoB-pr-16J" id="0dm-UG-2Le">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>

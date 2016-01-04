@@ -14,7 +14,6 @@ class ScrollHideNavigationBarViewController: UIViewController, UITableViewDelega
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.edgesForExtendedLayout = UIRectEdge.Top
         tableView.delegate          = self
         tableView.dataSource        = self
         tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: kScrollHideNavigationBarViewCellID)

@@ -15,7 +15,6 @@ class BgColorViewController: UIViewController, UITableViewDataSource, UITableVie
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.edgesForExtendedLayout = UIRectEdge.None
         tableView.dataSource = self
         tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: kBgBgColorViewCellID)
         self.navigationController?.navigationBar.lp_setBackgroundColor(UIColor.clearColor())
